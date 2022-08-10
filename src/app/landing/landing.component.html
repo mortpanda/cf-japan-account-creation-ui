@@ -1,0 +1,20 @@
+<ng-template #bigScreen>
+  <div class="lgMainDiv">
+    <div fxLayout="row wrap" fxLayoutAlign="center center">
+      <div id="okta-signin-container"></div>
+      <div class="bannerDiv">
+        <img src="assets/img/okta_workflows_white_medium.png" class="mainBanner">
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<!-- ************************* SMALL SCREEN ************************* -->
+<!-- ************************* SMALL SCREEN ************************* -->
+<ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
+  <div class="smMainDiv">
+    <div class="flex justify-content-center flex-wrap card-container  z-5">
+      <div id="okta-signin-container"></div>
+    </div>
+  </div>
+</ng-template>
