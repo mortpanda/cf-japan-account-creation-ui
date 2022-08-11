@@ -1,9 +1,33 @@
-<div class="lgMainDiv" fxLayout="row wrap" fxLayoutAlign="center start">
+<ng-template #bigScreen>
+    <div class="lgMainDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
-    <div class="userName">{{strFullName}}</div>
+        <div class="userName">{{strFullName}}</div>
 
-    <div>
-        
+        <div class="navDiv" fxLayout="row wrap">
+            <p-button label="Raise Account Request" (onClick)="newAccount()" id="navButton">
+                <img src="assets/img/data_visual_4.png" class="btnImg">
+            </p-button>
+
+            <p-button label="My Requests" (onClick)="test()" id="navButton">
+                <img src="assets/img/data_visual_5.png" class="btnImg">
+            </p-button>
+
+            <p-button label="My Approvals" (onClick)="test()" id="navReqButton">
+                <img src="assets/img/data_visual_6.png" class="btnImg">
+            </p-button>
+            
+        </div>
+        <div class="wfBannerDiv">
+            <img src="assets/img/okta_workflows_white_medium.png" class="wfBanner">
+        </div>
+
     </div>
 
-</div>
+</ng-template>
+<!-- ************************* SMALL SCREEN ************************* -->
+<!-- ************************* SMALL SCREEN ************************* -->
+<ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
+    <div class="smMainDiv">
+
+    </div>
+</ng-template>

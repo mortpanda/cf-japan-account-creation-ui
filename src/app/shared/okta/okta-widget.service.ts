@@ -37,7 +37,7 @@ export class OktaWidgetService {
     const OktaIssuer = this.OktaConfig.strIssuer;
     const OktaScope = this.OktaConfig.strScope;
     var oktaSignIn = new OktaSignIn({
-       flow:"login",
+      //  flow:"login",
       clientId: OktaClientID,
       baseUrl: OktaBaseURI,
       language: OktaLang,
