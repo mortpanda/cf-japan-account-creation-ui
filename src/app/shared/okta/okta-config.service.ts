@@ -31,9 +31,9 @@ export class OktaConfigService {
   strGitHubRepo = "https://github.com/mortpanda/cf-japan-account-creation-ui";
   strFlowUri = 'https://cf-japan.workflows.oktapreview.com/api/flo/d9ebde0dbd1e7278041cb52a622f3ca4/invoke?clientToken=c50af490a1fecde0d347426978ecdf55c726fb719479cd3a02a2647271b04f96';
 
-  strMyApprovalsUri = 'https://kent-nagao-oie.workflows.oktapreview.com/api/flo/c489aa4a64f1b0006fc4a1ac150106f3/invoke?clientToken=6e57119ef10dc0c90dd177776800feb77c593872e1e4d4f31f1acd13acc739a2';
+  strMyApprovalsUri = 'https://cf-japan.workflows.oktapreview.com/api/flo/e1f3ed12b64aefa472dc269eb570d24a/invoke?clientToken=713c27bd3154e26558d611e653066a5af1f42e424ce2e07d79dee4a21652d0dc';
   
-  strGetRequestsUri = 'https://kent-nagao-oie.workflows.oktapreview.com/api/flo/030918320ca8d7ff411ed22a2ef331e0/invoke?clientToken=f0bb6bc5db5963dcbeba9f043aa90794b480f110ef6f483afb33f4a17bcbf4dc';
+  strGetRequestsUri = 'https://cf-japan.workflows.oktapreview.com/api/flo/8dd8facde4bed9cc8a4eccf0c7e0f708/invoke?clientToken=a4e1a578407639f5d704244fa8db242aa2d817d7c278a6e8feb09310d672f2f8';
 
 
   

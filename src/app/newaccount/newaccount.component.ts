@@ -141,7 +141,7 @@ export class NewaccountComponent implements OnInit {
         break;
       }
     }
-    await this.SendRequest("spoke_new_account", this.OktaConfigService.strFlowUri, this.userEmail, this.strJust, this.strFirstname, this.strLastname);
+    await this.SendRequest("new_account", this.OktaConfigService.strFlowUri, this.userEmail, this.strJust, this.strFirstname, this.strLastname);
     this.processRequest = await false;
     // await this.CloseProgress();
   }

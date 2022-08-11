@@ -23,6 +23,11 @@ export class MenuListService {
       }
     },
     {
+      label: 'Main Menu',
+      icon: "pi pi-microsoft",
+      routerLink: ['/start'],
+    },
+    {
       label: 'ログアウト',
       icon: "pi pi-sign-out",
       style:'font-size: 1.5rem;',
@@ -30,36 +35,36 @@ export class MenuListService {
         this.Logout();
       }
     },
-    {
-      label: 'Facebook',
-      icon: "pi pi-fw pi-facebook",
-      style:'font-size: 0.7rem',
-      url: 'https://www.facebook.com/Okta/',
-    },
-    {
-      label: 'LinkedIn',
-      icon: "pi pi-fw pi-linkedin",
-      style:'font-size: 0.7rem',
-      url: 'https://www.linkedin.com/company/okta-inc-/',
-    },
-    {
-      label: 'Youtube',
-      icon: "pi pi-fw pi-youtube",
-      style:'font-size: 0.7rem',
-      url: 'https://www.youtube.com/OktaInc',
-    },
-    {
-      label: 'Twitter',
-      icon: "pi pi-fw pi-twitter",
-      style:'font-size: 0.7rem',
-      url: 'https://twitter.com/okta_japan',
-    },
+    // {
+    //   label: 'Facebook',
+    //   icon: "pi pi-fw pi-facebook",
+    //   style:'font-size: 0.7rem',
+    //   url: 'https://www.facebook.com/Okta/',
+    // },
+    // {
+    //   label: 'LinkedIn',
+    //   icon: "pi pi-fw pi-linkedin",
+    //   style:'font-size: 0.7rem',
+    //   url: 'https://www.linkedin.com/company/okta-inc-/',
+    // },
+    // {
+    //   label: 'Youtube',
+    //   icon: "pi pi-fw pi-youtube",
+    //   style:'font-size: 0.7rem',
+    //   url: 'https://www.youtube.com/OktaInc',
+    // },
+    // {
+    //   label: 'Twitter',
+    //   icon: "pi pi-fw pi-twitter",
+    //   style:'font-size: 0.7rem',
+    //   url: 'https://twitter.com/okta_japan',
+    // },
     
   ];
 
   SmallMenu = [
     {
-      label: 'ホーム',
+      label: 'Home',
       icon: "pi pi-home",
       // style:'font-size: 1.5rem',
       command: () => {
@@ -67,37 +72,42 @@ export class MenuListService {
       }
     },
     {
-      label: 'ログアウト',
+      label: 'Main Menu',
+      icon: "pi pi-microsoft",
+      routerLink: ['/start'],
+    },
+    {
+      label: 'Logout',
       icon: "pi pi-sign-out",
       // style:'font-size: 1.5rem;',
       command: () => {
         this.Logout();
       }
     },
-    {
-      label: 'Facebook',
-      icon: "pi pi-fw pi-facebook",
-      // style:'font-size: 0.7rem',
-      url: 'https://www.facebook.com/Okta/',
-    },
-    {
-      label: 'LinkedIn',
-      icon: "pi pi-fw pi-linkedin",
-      // style:'font-size: 0.7rem',
-      url: 'https://www.linkedin.com/company/okta-inc-/',
-    },
-    {
-      label: 'Youtube',
-      icon: "pi pi-fw pi-youtube",
-      // style:'font-size: 0.7rem',
-      url: 'https://www.youtube.com/OktaInc',
-    },
-    {
-      label: 'Twitter',
-      icon: "pi pi-fw pi-twitter",
-      // style:'font-size: 0.7rem',
-      url: 'https://twitter.com/okta_japan',
-    },
+    // {
+    //   label: 'Facebook',
+    //   icon: "pi pi-fw pi-facebook",
+    //   // style:'font-size: 0.7rem',
+    //   url: 'https://www.facebook.com/Okta/',
+    // },
+    // {
+    //   label: 'LinkedIn',
+    //   icon: "pi pi-fw pi-linkedin",
+    //   // style:'font-size: 0.7rem',
+    //   url: 'https://www.linkedin.com/company/okta-inc-/',
+    // },
+    // {
+    //   label: 'Youtube',
+    //   icon: "pi pi-fw pi-youtube",
+    //   // style:'font-size: 0.7rem',
+    //   url: 'https://www.youtube.com/OktaInc',
+    // },
+    // {
+    //   label: 'Twitter',
+    //   icon: "pi pi-fw pi-twitter",
+    //   // style:'font-size: 0.7rem',
+    //   url: 'https://twitter.com/okta_japan',
+    // },
     
   ];
 

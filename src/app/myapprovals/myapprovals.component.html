@@ -1,1 +1,131 @@
-<p>myapprovals works!</p>
+<ng-template #bigScreen>
+    <div class="myApprovalsMainContainer" fxLayout="row wrap" fxLayoutAlign="center">
+    
+      <div class="userDiv">
+        <a class="userLabel">{{strFullName}}</a>
+      </div>
+
+      <div class="containerHead"><h1>My Approvals</h1></div>
+    
+      <div *ngIf="myApprovalLoad; else notShow" class="approvalsLoad">
+        <div class="tableDiv">
+          <table mat-table [dataSource]="arrMyApprovals" class="mat-elevation-z8" id="approvalTable">
+    
+            <ng-container matColumnDef="requestor">
+              <th mat-header-cell *matHeaderCellDef> Requestor </th>
+              <td mat-cell *matCellDef="let element"> {{element.requestor}} </td>
+            </ng-container>
+          
+            
+            <ng-container matColumnDef="firstname">
+              <th mat-header-cell *matHeaderCellDef> First name </th>
+              <td mat-cell *matCellDef="let element"> {{element.firstname}} </td>
+            </ng-container>
+          
+            
+            <ng-container matColumnDef="lastname">
+              <th mat-header-cell *matHeaderCellDef> Last name </th>
+              <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
+            </ng-container>
+          
+            
+            <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef> Status </th>
+              <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+            </ng-container>
+    
+            
+            <ng-container matColumnDef="justification">
+              <th mat-header-cell *matHeaderCellDef> Justification </th>
+              <td mat-cell *matCellDef="let element"> {{element.justification}} </td>
+            </ng-container>
+          
+            <!-- <tr mat-header-row *matHeaderRowDef="approvalTableHead"></tr>
+            <tr mat-row *matRowDef="let row; columns: approvalTableHead;"></tr> -->
+          
+            <tr mat-header-row *matHeaderRowDef="approvalTableHead; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: approvalTableHead;" (click)="openRow(row)" ></tr>
+    
+          </table>
+    
+        </div>
+        <div class="contBannerDiv">
+          <img src="assets/img/okta_workflows_white_medium.png" class="contBanner">
+      </div>
+      </div>
+    
+      <ng-template #notShow>
+        <div class="progressbarDiv">
+          <h2>Checking to see if you have any outstanding approvals</h2>
+          <p-progressBar mode="indeterminate" [style]="{'height': '10px'}"></p-progressBar>
+    
+        </div>
+      </ng-template>
+    </div>
+    
+    
+    </ng-template>
+    
+    <!-- ************************* SMALL SCREEN ************************* -->
+    <!-- ************************* SMALL SCREEN ************************* -->
+    
+    <ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
+      <div class="SMmyApprovalsMainContainer" fxLayout="row wrap" fxLayoutAlign="center">
+        
+        <div class="userDiv">
+          <a class="userLabel">{{strFullName}}</a>
+        </div>
+    
+        <div *ngIf="myApprovalLoad; else notShow" class="approvalsLoad">
+          <div class="SMtableDiv">
+            <table mat-table [dataSource]="arrMyApprovals" class="mat-elevation-z8" id="approvalTable">
+    
+              <ng-container matColumnDef="requestor" >
+                <th mat-header-cell *matHeaderCellDef> Requestor </th>
+                <td mat-cell *matCellDef="let element"> {{element.requestor}} </td>
+              </ng-container>
+            
+              
+              <ng-container matColumnDef="firstname">
+                <th mat-header-cell *matHeaderCellDef> First name </th>
+                <td mat-cell *matCellDef="let element"> {{element.firstname}} </td>
+              </ng-container>
+            
+              
+              <ng-container matColumnDef="lastname">
+                <th mat-header-cell *matHeaderCellDef> Last name </th>
+                <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
+              </ng-container>
+            
+              
+              <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef> Status </th>
+                <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+              </ng-container>
+      
+              
+              <ng-container matColumnDef="justification">
+                <th mat-header-cell *matHeaderCellDef> Justification </th>
+                <td mat-cell *matCellDef="let element"> {{element.justification}} </td>
+              </ng-container>        
+              <tr mat-header-row *matHeaderRowDef="approvalTableHead; sticky: true"></tr>
+              <tr mat-row *matRowDef="let row; columns: approvalTableHead;" (click)="openRow(row)" ></tr>
+      
+            </table>
+          </div>
+    
+        </div>
+    
+        <ng-template #notShow>
+          <div class="progressbarDiv">
+            <h2>Checking to see if you have any outstanding approvals</h2>
+            <p-progressBar mode="indeterminate" [style]="{'height': '10px'}"></p-progressBar>
+      
+          </div>
+        </ng-template>
+    
+    
+      </div>
+    
+    
+    </ng-template>

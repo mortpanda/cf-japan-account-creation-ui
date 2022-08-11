@@ -1,0 +1,115 @@
+<ng-template #bigScreen>
+    <div class="popupMain">
+      <div class="popupBannerDiv">
+        <img src="assets/img/okta_japan_white_medium.png" style="height: 60px;width: auto;">
+      </div>
+  
+      <p-divider></p-divider>
+  
+      <div fxLayout="columns wrap" fxLayoutAlign="center start">
+        <div class="divLeft">
+          <div>
+            <a class="formLabel">Action </a>
+          </div>
+          <div>
+            <a class="formLabel">Requestor </a>
+          </div>
+          <div>
+            <a class="formLabel">Approval Group </a>
+          </div>
+          <div>
+            <a class="formLabel">Expiry </a>
+          </div>
+        </div>
+  
+        <div class="divRight">
+          <div class="requestParam">
+            <a>{{myApprovalItem?.action}}</a>
+          </div>
+          <div class="requestParam">
+            <a>{{myApprovalItem?.requestor}}</a>
+          </div>
+          <div class="requestParam">
+            <a>{{myApprovalItem?.approvalGroup}}</a>
+          </div>
+          <div class="requestParam">
+            <a>{{myApprovalItem?.expiryDate | date:medium }}</a>
+          </div>
+        </div>
+  
+        <div class="justDiv">
+          <a class="JustifyLebel">Justification </a>
+        </div>
+        <div class="justContent">
+          <a class="JustifyLebel">{{myApprovalItem?.justification}} </a>
+        </div>
+        <p-button class="approveBtn" pRipple type="button" label="Approve" id="menuBtn" (click)="Approve()"  icon="pi pi-check" iconPos="right"></p-button>
+      </div>
+    </div>
+  
+  
+  </ng-template>
+  
+  <!-- ************************* SMALL SCREEN ************************* -->
+  <!-- ************************* SMALL SCREEN ************************* -->
+  <ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
+    <div class="SMpopupMain">
+      <div class="SMpopupBannerDiv">
+        <img src="assets/img/okta_japan_white_medium.png" class="smScreenBanner">
+      </div>
+  
+      <p-divider></p-divider>
+  
+      <div fxLayout="columns wrap" fxLayoutAlign="center start">
+  
+        <div class="LabelDiv">
+          <a class="SMformLabel">Action </a>
+        </div>
+        <div class="ParamDiv">
+          <div class="requestParam">
+            <a>{{myApprovalItem?.action}}</a>
+          </div>
+        </div>
+  
+        <div class="LabelDiv">
+          <a class="SMformLabel">Requestor </a>
+        </div>
+        <div class="ParamDiv">
+          <div class="requestParam">
+            <a>{{myApprovalItem?.requestor}}</a>
+          </div>
+        </div>
+  
+        <div class="LabelDiv">
+          <a class="SMformLabel">Approval Group </a>
+        </div>
+        <div class="ParamDiv">
+          <div class="requestParam">
+            <a>{{myApprovalItem?.approvalGroup}}</a>
+          </div>
+        </div>
+  
+        <div class="LabelDiv">
+          <a class="SMformLabel">Expiry</a>
+        </div>
+        <div class="ParamDiv">
+          <div class="requestParam">
+            <a>{{myApprovalItem?.expiryDate | date:medium }}</a>
+          </div>
+        </div>
+  
+  
+        <div class="LabelDiv">
+          <a class="SMformLabel">Justification</a>
+        </div>
+        <div class="ParamDiv">
+          <div class="requestParam">
+            <a>{{myApprovalItem?.justification }}</a>
+          </div>
+        </div>
+        <p-button class="approveBtn" type="button" label="Home" id="menuBtn" (click)="Approve()"></p-button>
+  
+      </div>
+    </div>
+  
+  </ng-template>

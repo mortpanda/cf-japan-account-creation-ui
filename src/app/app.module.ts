@@ -30,6 +30,8 @@ import { FormsModule } from '@angular/forms';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DividerModule } from 'primeng/divider';
 import { CardModule } from 'primeng/card';
+import { ApprovalPopupComponent } from './myapprovals/approval-popup/approval-popup.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { CardModule } from 'primeng/card';
     MyapprovalsComponent,
     MyrequestsComponent,
     NewaccountComponent,
-    ProcessingComponent
+    ProcessingComponent,
+    ApprovalPopupComponent
   ],
   imports: [
     BrowserModule,
@@ -65,9 +68,10 @@ import { CardModule } from 'primeng/card';
     InputTextareaModule,
     DividerModule,
     CardModule,
+    MatTableModule,
 
   ],
-  providers: [NewaccountComponent,MessageService,ProcessingComponent],
+  providers: [NewaccountComponent,MessageService,ProcessingComponent,ApprovalPopupComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
