@@ -1,7 +1,7 @@
 .requestsDiv {
     margin-top: 40px !important;
     text-align: center !important;
-    width: 100% !important;
+    width: 90% !important;
   
     //  border: #00297A!important;
     //  border-width: 1px!important;
@@ -16,7 +16,8 @@
     padding-top: 15px !important;
     text-align: center !important;
     border-radius: 5px !important;
-    box-shadow: 0px 5px 12px 0px #6e6e78 !important;
+    // box-shadow: 0px 5px 12px 0px #6e6e78 !important;
+    margin-top: 70px!important;
   }
   
   .myReqBannerImg {
@@ -32,6 +33,7 @@
   .myReqBtnDiv {
     width: 95% !important;
     margin-top: 20px !important;
+    text-align: center!important;
   }
   
   #menuBtn {
@@ -39,19 +41,19 @@
       // border:#FFFFFF!important;
       border-width: 1px !important;
       background-color: #00297a !important;
-      margin-right: 10px !important;
+      // margin-left: 10px !important;
       box-shadow: 0px 5px 12px 0px #6e6e78 !important;
     }
   }
   
   .ReqtableDiv{
     margin-top: 20px!important;
-    width:100vw!important;
+    width:100%!important;
   }
   
   .reqTableDiv{
     
-      width:95vw!important;
+      width:100%!important;
     
   }
   

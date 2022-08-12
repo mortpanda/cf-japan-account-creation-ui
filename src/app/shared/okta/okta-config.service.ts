@@ -37,7 +37,25 @@ export class OktaConfigService {
 
 
   
+  //Github pages https://cf-japan.oktapreview.com
+  // strBaseURI = 'https://cf-japan.oktapreview.com/';
+  // strRedirectURL = 'https://localhost:4200/cf-japan-account-creation-ui/start/';
+  // strMyRequests = 'https://localhost:4200/cf-japan-account-creation-ui/myrequests/';
+  // strMyApprovals = 'https://localhost:4200/cf-japan-account-creation-ui/myapprovals/';
+  // strClientID = '0oa4br3b271PaT6v91d7';
+  // strIssuer = 'https://cf-japan.oktapreview.com/oauth2/default/';
+  // strPostLogoutURL = 'https://localhost:4200/cf-japan-account-creation-ui/';
+  // strScope = ['openid', 'email', 'profile'];
+  // strResponseType = ['token', 'id_token'];
+  // strResponseMode = 'fragment';
+  // strPrompt = 'login';
+  // strPkce = true;
+  // strLang = 'en';
+  // strBrand = '#00297A';
+  // strLogo = "assets/img/okta-japan-small.png";
+  // strMeEP = '/api/v1/users/me';
 
+  // strPostLogoutURL = 'https://mortpanda.github.io/kent-multi-utils/';
 
 }
 

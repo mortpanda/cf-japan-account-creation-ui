@@ -1,11 +1,13 @@
-<div class="requestsDiv" fxLayout="row wrap" fxLayoutAlign="center">
+
+<div class="requestsDiv" fxLayout="row wrap" fxLayoutAlign="center center">
 
     <div class="myReqDivHead">
       <img src="assets/img/okta_workflows_white_medium.png" class="myReqBannerImg">
     </div>
   
-    <div *ngIf="RequestData; else notShow" class="reqTableDiv">
-      <div class="ReqtableDiv" fxLayoutAlign="center">
+    
+    <div *ngIf="RequestData; else notShow" class="reqTableDiv" fxLayoutAlign="center center">
+      <div class="ReqtableDiv" fxLayoutAlign="center center">
         <table mat-table [dataSource]="GetRequestRes" class="mat-elevation-z8" id="requestTable">
   
           <ng-container matColumnDef="action">
@@ -41,6 +43,7 @@
       </div>
     </div>
   
+  
     <ng-template #notShow>
       <div class="divSpacer"></div>
   
@@ -50,8 +53,8 @@
         <input type="text" pInputText [(ngModel)]="myEmail" placeholder=" Enter your email address" id="myReqInput">
       </div>
   
-      <div class="myReqBtnDiv">
-        <p-button class="approveBtn" type="button" label="Get My Requests" id="menuBtn" (click)="CallGetReq()"
+      <div class="myReqBtnDiv" fxLayoutAlign="center center">
+        <p-button class="approveBtn" type="button" label="Get My Requests" id="getReqBtn" (click)="CallGetReq()"
           icon="pi pi-cloud-download" iconPos="right"></p-button>
       </div>
   

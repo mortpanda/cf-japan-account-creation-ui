@@ -1,110 +1,108 @@
 .myApprovalsMainContainer {
-    // border-style: dotted;
-    text-align: center !important;
-    color: #00297a !important;
-    margin-top: 30px !important;
-    // width:85%!important;
-  }
-  
-  .userDiv {
-    width: 100% !important;
-  }
-  
-  .userLabel {
-    font-weight: 500 !important;
-    font-size: 16px !important;
-  }
-  
-  .progressbarDiv {
-    // border-style: dotted;
-    width: 50% !important;
-    margin-top: 30px !important;
-    color:#FFFFFF!important;
-  }
-  
-  .tableDiv {
-    // border-style: dotted;
-  
-    margin-top: 50px !important;
-    width: 70vw !important;
-    text-align: left !important;
-  }
-  
-  .SMtableDiv{
-     border-style: dotted;
-  
-    margin-top: 30px !important;
-    width: 98vw !important;
-    text-align: left !important;
-    overflow-x: auto!important;
-  }
-  
-  table {
-    width: 100% !important;
-    font-size: 10px !important;
-  }
-  
-  #approvalTable {
-    border-style: solid!important;
-    border-color: #ffffff!important;
-    border-radius: 5px!important;
-    .mat-footer-row,
-    .mat-header-row,
-    .mat-row,
-    .mat-cell {
-      padding-left: 15px !important;
-      padding-top: 10px !important;
-      padding-bottom: 10px !important;
-      height: auto !important;
-     
-    }
-  }
-  
-  #approvalTable {
-    .mat-header-cell {
-      padding-left: 5px !important;
-      // border: 1px solid grey !important;
-      background-color: #8D6E97 !important;
-      padding-top:5px!important;
-      padding-bottom:5px!important;
-      color: #ffffff !important;
-      height: auto !important;
-      font-size: 14px !important;
-    }
-  }
-  
-  #approvalTable{
-    .mat-row:hover {
-    background-color: #D7D7DC!important;
-    
-  }
-  }
-  
-  
-  
-  
-  .SMmyApprovalsMainContainer {
-    // border-style: dotted;
-    text-align: center !important;
-    color: #00297a !important;
-    margin-top: 30px !important;
-    // width:85%!important;
-  }
-  
-  
-  .containerHead{
-    color: #FFFFFF!important;
-    width:100%!important;
-    margin-top: 70px!important;
-  }
-  
-  .contBannerDiv{
-    width:100%!important;
-  }
+  // border-style: dotted;
+  text-align: center !important;
+  color: #00297a !important;
+  margin-top: 30px !important;
+  // width:85%!important;
+}
 
-  .contBanner{
-    position: fixed!important;
-    right:1%!important;
-    bottom:2%!important;
-    width:150px!important;
+.userDiv {
+  width: 100% !important;
+}
+
+.userLabel {
+  font-weight: 500 !important;
+  font-size: 16px !important;
+}
+
+.progressbarDiv {
+  // border-style: dotted;
+  width: 50% !important;
+  margin-top: 30px !important;
+  color: #FFFFFF !important;
+}
+
+.tableDiv {
+  // border-style: dotted;
+
+  margin-top: 50px !important;
+  width: 70vw !important;
+  text-align: left !important;
+}
+
+.SMtableDiv {
+  border-style: dotted;
+
+  margin-top: 30px !important;
+  width: 98vw !important;
+  text-align: left !important;
+  overflow-x: auto !important;
+}
+
+table {
+  width: 100% !important;
+  font-size: 10px !important;
+}
+
+#approvalTable {
+  border-style: solid !important;
+  border-color: #ffffff !important;
+  border-radius: 5px !important;
+
+  .mat-footer-row,
+  .mat-header-row,
+  .mat-row,
+  .mat-cell {
+    padding-left: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    height: auto !important;
+
   }
+}
+
+#approvalTable {
+  .mat-header-cell {
+    padding-left: 5px !important;
+    // border: 1px solid grey !important;
+    background-color: #8D6E97 !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    color: #ffffff !important;
+    height: auto !important;
+    font-size: 14px !important;
+  }
+}
+
+#approvalTable {
+  .mat-row:hover {
+    background-color: #D7D7DC !important;
+
+  }
+}
+
+.SMmyApprovalsMainContainer {
+  // border-style: dotted;
+  text-align: center !important;
+  color: #00297a !important;
+  margin-top: 30px !important;
+  // width:85%!important;
+}
+
+
+.containerHead {
+  color: #FFFFFF !important;
+  width: 100% !important;
+  margin-top: 70px !important;
+}
+
+.contBannerDiv {
+  width: 100% !important;
+}
+
+.contBanner {
+  position: fixed !important;
+  right: 1% !important;
+  bottom: 2% !important;
+  width: 150px !important;
+}
