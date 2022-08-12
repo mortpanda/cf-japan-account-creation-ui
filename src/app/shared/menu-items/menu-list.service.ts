@@ -15,7 +15,7 @@ export class MenuListService {
 
   ItemsMenu = [
     {
-      label: 'ホーム',
+      label: 'Home',
       icon: "pi pi-home",
       style:'font-size: 1.5rem',
       command: () => {
@@ -28,7 +28,7 @@ export class MenuListService {
       routerLink: ['/start'],
     },
     {
-      label: 'ログアウト',
+      label: 'Logout',
       icon: "pi pi-sign-out",
       style:'font-size: 1.5rem;',
       command: () => {

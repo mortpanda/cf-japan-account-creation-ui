@@ -36,7 +36,6 @@
     ;
 }
 
-
 #submitBtn {
     .p-button {
         // border:#FFFFFF!important;
@@ -50,12 +49,10 @@
     margin-top: 10px !important;
 }
 
-
 .progressBar {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
 }
-
 
 .labelNewAccount {
     width: 100% !important;
@@ -70,16 +67,9 @@
     font-weight: 600;
 }
 
-
-
 #newAccountForm {
     .p-element {
-        // color: #00297A !important;
-
         .p-inputgroup {
-            // border-style: dotted;
-            // color: #00297A !important;
-
             .p-inputgroup-addon {
                 .p-inputtext {
 
@@ -88,4 +78,8 @@
             }
         }
     }
+}
+
+.approverLabel{
+    margin-top:10px!important;
 }

@@ -35,7 +35,7 @@ export class MyrequestsComponent implements OnInit {
 
     this.RequestData = false;
     /////////////////////////////////////////
-    // this.myEmail = 'test.user5432@okta.com';
+    this.myEmail = this.OktaConfigService.strDemoUsername;
     /////////////////////////////////////////
   }
 

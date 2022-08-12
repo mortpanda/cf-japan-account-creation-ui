@@ -6,8 +6,14 @@ import { Injectable } from '@angular/core';
 })
 export class OktaConfigService {
 
-  strMe = 'test.user123@okta.com';
-  strReason = 'I need it because, I need it';
+strDemoUsername = 'new.user-1@okta.com';
+strDemoUserFirstname = 'Demo';
+strDemoUserLastname = 'User-1';
+strJust = 'Required to access apps.'
+
+
+  // strMe = 'test.user123@okta.com';
+  // strReason = 'I need it because, I need it';
   constructor() { }
 
   //Localhost https://cf-japan.oktapreview.com
@@ -39,9 +45,9 @@ export class OktaConfigService {
   
   //Github pages https://cf-japan.oktapreview.com
   // strBaseURI = 'https://cf-japan.oktapreview.com/';
-  // strRedirectURL = 'https://localhost:4200/cf-japan-account-creation-ui/start/';
-  // strMyRequests = 'https://localhost:4200/cf-japan-account-creation-ui/myrequests/';
-  // strMyApprovals = 'https://localhost:4200/cf-japan-account-creation-ui/myapprovals/';
+  // strRedirectURL = 'https://mortpanda.github.io/cf-japan-account-creation-ui/start/';
+  // strMyRequests = 'https://mortpanda.github.io//cf-japan-account-creation-ui/myrequests/';
+  // strMyApprovals = 'https://mortpanda.github.io//cf-japan-account-creation-ui/myapprovals/';
   // strClientID = '0oa4br3b271PaT6v91d7';
   // strIssuer = 'https://cf-japan.oktapreview.com/oauth2/default/';
   // strPostLogoutURL = 'https://localhost:4200/cf-japan-account-creation-ui/';
