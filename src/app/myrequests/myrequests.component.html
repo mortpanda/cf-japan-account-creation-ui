@@ -5,6 +5,8 @@
       <img src="assets/img/okta_workflows_white_medium.png" class="myReqBannerImg">
     </div>
   
+    <Div class="myReqLabel"><h2>My Requests</h2></Div>
+
     <div *ngIf="RequestData; else notShow" class="reqTableDiv" fxLayoutAlign="center center">
       <div class="ReqtableDiv" fxLayoutAlign="center center">
         <table mat-table [dataSource]="GetRequestRes" class="mat-elevation-z8" id="requestTable">

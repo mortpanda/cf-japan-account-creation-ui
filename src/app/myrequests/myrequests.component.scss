@@ -1,7 +1,9 @@
 .requestsDiv {
     margin-top: 40px !important;
     text-align: center !important;
-    width: 90% !important;
+    // width: 100% !important;
+    // border-style: dotted;
+    // color:#FFFFFF;
   }
   
   .myReqDivHead {
@@ -74,4 +76,8 @@
       border-style: solid!important;
       border-color: #ffffff!important;
     }
+  }
+  .myReqLabel{
+    width:100%!important;
+    color: #ffffff!important;
   }
