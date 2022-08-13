@@ -123,3 +123,13 @@ $danger: #EC3629 !default;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.contBannerDiv {
+  width: 100% !important;
+}
+
+.contBanner {
+  position: fixed !important;
+  right: 1% !important;
+  bottom: 2% !important;
+  width: 150px !important;
+}

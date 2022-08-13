@@ -2,21 +2,15 @@
     margin-top: 40px !important;
     text-align: center !important;
     width: 90% !important;
-  
-    //  border: #00297A!important;
-    //  border-width: 1px!important;
-    //  border-style: solid!important;
   }
   
   .myReqDivHead {
-    // border-style: dotted;
     width: 400px !important;
     background-color: #00297a !important;
     padding: 10px !important;
     padding-top: 15px !important;
     text-align: center !important;
     border-radius: 5px !important;
-    // box-shadow: 0px 5px 12px 0px #6e6e78 !important;
     margin-top: 70px!important;
   }
   
@@ -38,10 +32,8 @@
   
   #menuBtn {
     .p-button {
-      // border:#FFFFFF!important;
       border-width: 1px !important;
       background-color: #00297a !important;
-      // margin-left: 10px !important;
       box-shadow: 0px 5px 12px 0px #6e6e78 !important;
     }
   }
@@ -52,9 +44,7 @@
   }
   
   .reqTableDiv{
-    
       width:100%!important;
-    
   }
   
   #requestTable {
@@ -66,19 +56,16 @@
       padding-top: 10px !important;
       padding-bottom: 10px !important;
       height: auto !important;
-      // margin-left:15px!important;
     }
   }
   
   #requestTable {
     .mat-header-cell {
       padding-left: 5px !important;
-      // border: 1px solid grey !important;
       background-color: #00297a !important;
       color: #ffffff !important;
       height: auto !important;
       font-size: 14px !important;
-      // margin-left:15px!important;
     }
   }
 
